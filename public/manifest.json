@@ -1,14 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Hotel Booking",
+  "name": "Book Your Journey",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "hotel-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "hotel-icon-152.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://pwa-demo-585eb.firebaseapp.com/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

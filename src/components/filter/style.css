@@ -1,0 +1,66 @@
+.back-arrow {
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+}
+.filter-header{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.space-betwn{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.range-filter{
+  width:200px;
+  margin:10px auto 10px auto; 
+}
+.star{
+    width: 35px;
+    height: 30px;
+    margin-left: 1px;
+}
+.card-title{
+  text-align: left;
+  font-size: 13px;
+  color: gray;
+}
+.rating-card{
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  justify-content: space-evenly;
+}
+.flex-display {
+  justify-content: space-around;
+  display: flex;
+  padding: 20px 10px 10px 10px;
+}
+.radio-options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.radio-btn-titles{
+  font-size: 15px;
+}
+.apply-btn{
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.facility-margin{
+  margin-bottom: 81px;
+}
+.margin{
+  margin:10px 0px;
+}
+.star-bg-clr{
+  background-color: #0080ff;
+}

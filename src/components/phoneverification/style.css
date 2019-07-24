@@ -1,0 +1,53 @@
+.bg{
+  background-image: url('../../Images/destination4.jpeg');
+  height: 100vh; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.wrapper{
+
+}
+.clr-white{
+  color: white;
+}
+.header{
+  padding-top:150px;
+  padding-bottom:20px;
+}
+.header-title{
+  font-size: 20px;
+  padding-bottom:3px;
+  text-align: left;
+  padding-left: 50px;
+}
+.header-subtitle{
+  font-size: 14px;
+  text-align: left;
+  padding-left: 50px;
+}
+.input-fields{
+  height:20px;
+}
+.mobno-input{
+  width: 160px;
+  margin-right: 10px;
+}
+.clr-red{
+  color: red;
+}
+.otp-input{
+  width: 270px;
+  margin-bottom:20px;
+}
+.resend-btn{
+  width: 100px;
+}
+.continue-btn{
+  width: 277px;
+}
+.footer{
+  padding-top:200px;
+}

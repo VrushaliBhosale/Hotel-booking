@@ -12,12 +12,12 @@
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
-    // [::1] is the IPv6 localhost address.
-    window.location.hostname === '[::1]' ||
-    // 127.0.0.1/8 is considered localhost for IPv4.
-    window.location.hostname.match(
-      /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-    )
+  // [::1] is the IPv6 localhost address.
+  window.location.hostname === '[::1]' ||
+  // 127.0.0.1/8 is considered localhost for IPv4.
+  window.location.hostname.match(
+    /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+  )
 );
 
 export function register(config) {
@@ -43,7 +43,7 @@ export function register(config) {
         navigator.serviceWorker.ready.then(() => {
           console.log(
             'This web app is being served cache-first by a service ' +
-              'worker. To learn more, visit https://bit.ly/CRA-PWA'
+            'worker. To learn more, visit https://bit.ly/CRA-PWA'
           );
         });
       } else {
@@ -53,6 +53,29 @@ export function register(config) {
     });
   }
 }
+
+window.addEventListener('fetch', event => {
+  // Let the browser do its default thing
+  // for non-GET requests.
+  if (event.request.method != 'GET') return;
+
+  // Prevent the default, and handle the request ourselves.
+  event.respondWith(async function () {
+    // Try to get the response from a cache.
+    const cache = await caches.open('dynamic-v1');
+    const cachedResponse = await cache.match(event.request);
+
+    if (cachedResponse) {
+      // If we found a match in the cache, return it, but also
+      // update the entry in the cache in the background.
+      event.waitUntil(cache.add(event.request));
+      return cachedResponse;
+    }
+
+    // If we didn't find a match in the cache, use the network.
+    return fetch(event.request);
+  }());
+});
 
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker
@@ -71,7 +94,7 @@ function registerValidSW(swUrl, config) {
               // content until all client tabs are closed.
               console.log(
                 'New content is available and will be used when all ' +
-                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+                'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
 
               // Execute callback
