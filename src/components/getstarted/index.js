@@ -12,7 +12,7 @@ export default class GetStarted extends Component {
           <div className='circular-design'>Up</div>
         </div>
         <div className='header_subtitle'>Best Budget Hotels</div>
-        <Link to='/getstarted/phoneverification' style={{ textDecoration: 'none' }}>
+        <Link to='/getstarted/phoneverification'>
           <Button variant="contained" color="secondary" className='getstarted_btn'>
             Get started
           </Button>

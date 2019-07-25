@@ -1,53 +1,71 @@
-.bg{
+.bg {
   background-image: url('../../Images/destination4.jpeg');
-  height: 100vh; 
+  min-height: 100vh; 
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.wrapper{
-
-}
-.clr-white{
+.clr-white {
   color: white;
 }
-.header{
-  padding-top:150px;
-  padding-bottom:20px;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
-.header-title{
+.header-title {
   font-size: 20px;
-  padding-bottom:3px;
+  padding-bottom: 3px;
   text-align: left;
-  padding-left: 50px;
 }
-.header-subtitle{
+.header-subtitle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 14px;
   text-align: left;
-  padding-left: 50px;
+  padding-top: 10px;
 }
-.input-fields{
-  height:20px;
+.header-subtitle .clr-red {
+  font-size: 14px;
 }
-.mobno-input{
+.footer .header-subtitle {
+  padding: 10px 10px 0 10px;
+}
+.footer .clr-red {
+  padding: 0 10px;
+}
+.input-fields {
+  height: 34px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.mobno-input {
   width: 160px;
   margin-right: 10px;
 }
-.clr-red{
+.clr-red {
   color: red;
 }
-.otp-input{
+.otp-input {
   width: 270px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
-.resend-btn{
+.resend-btn {
   width: 100px;
 }
-.continue-btn{
+.continue-btn {
   width: 277px;
 }
-.footer{
-  padding-top:200px;
+.footer {
+  padding: 100px 0;
 }

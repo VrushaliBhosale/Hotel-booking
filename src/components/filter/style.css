@@ -1,34 +1,37 @@
+a {
+  text-decoration: none;
+}
 .back-arrow {
   width: 30px;
   height: 30px;
   padding-right: 5px;
 }
-.filter-header{
+.filter-header {
   display: flex;
   align-items: center;
   padding: 10px;
 }
-.space-betwn{
+.space-betwn {
   justify-content: space-between;
 }
-.space-around{
+.space-around {
   justify-content: space-around;
 }
-.range-filter{
-  width:200px;
-  margin:10px auto 10px auto; 
+.range-filter {
+  width: 200px;
+  margin: 10px auto 10px auto; 
 }
-.star{
-    width: 35px;
-    height: 30px;
-    margin-left: 1px;
+.star {
+  width: 35px;
+  height: 30px;
+  margin-left: 1px;
 }
-.card-title{
+.card-title {
   text-align: left;
   font-size: 13px;
   color: gray;
 }
-.rating-card{
+.rating-card {
   width: 15%;
   display: flex;
   flex-direction: row;
@@ -40,27 +43,47 @@
   display: flex;
   padding: 20px 10px 10px 10px;
 }
-.radio-options{
+.flex-display .rating-card > div {
+  align-self: center;
+  font-size: 15px;
+}
+.radio-options {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-.radio-btn-titles{
+.radio-options > div {
+  text-align: left;
+}
+.radio-btn-titles {
   font-size: 15px;
 }
-.apply-btn{
-  width:100%;
-  position: absolute;
+.radio-btn-titles + div {
+  color: gray;
+  font-size: 13px;
+}
+.App .apply-btn {
+  width: 100%;
+  position: fixed;
   bottom: 0;
   left: 0;
+  padding: 15px;
+  border-radius: 0;
 }
-.facility-margin{
+.facility-margin {
   margin-bottom: 81px;
 }
-.margin{
-  margin:10px 0px;
+.filter-wrapper .margin {
+  margin: 10px 0px;
+  padding: 10px;
 }
-.star-bg-clr{
+.filter-wrapper .MuiPaper-rounded {
+  border-radius: 0;
+}
+.star-bg-clr {
   background-color: #0080ff;
+}
+.filter {
+  padding-left: 10px;
 }

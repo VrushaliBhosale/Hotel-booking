@@ -23,7 +23,7 @@ export default class PhoneVerification extends Component {
           </div>
         </div>
         <div className='footer'>
-          <Link to='/homepage' style={{ textDecoration: 'none' }}>
+          <Link to='/homepage'>
             <Button variant="contained" color="secondary" className='continue-btn'>
               continue
             </Button>

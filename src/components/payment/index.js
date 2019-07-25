@@ -10,10 +10,10 @@ export default class Payment extends Component {
   }
   render() {
     return (
-      <div style={{ backgroundColor: '#D8D8D8' }}>
+      <div className='payment-wrapper'>
         <div className='payment-header bg-clr'>
           <div>
-            <div style={{ color: 'black', fontSize: 18, paddingTop: 10, paddingBottom: 10 }}>Hotel Blue Sky</div>
+            <div className='hotel-name'>Hotel Blue Sky</div>
             <div>329 Clemens Vista, Militon Heaven</div>
             <div>Montreal, Canada</div>
           </div>
@@ -26,75 +26,63 @@ export default class Payment extends Component {
         </div>
 
         <div className='text-display journey-content-display space-even bg-clr'>
-          <div>
-            <div style={{ padding: 5 }} className='clr-gray'>CHECK-IN</div>
+          <div className='check-in-info'>
+            <div className='clr-gray'>CHECK-IN</div>
             <div>01,JUN 2018</div>
             <div className='clr-gray'>12:00 PM</div>
           </div>
           <div className='clr-gray'>2 Night</div>
-          <div>
-            <div className='clr-gray'>CHEK-IN</div>
+          <div className='check-out-info'>
+            <div className='clr-gray'>CHEK-OUT</div>
             <div>04,JUN 2018</div>
             <div className='clr-gray'>12:00 PM</div>
           </div>
         </div>
 
-        <div className='text-display space-betwn bg-clr' style={{ padding: 10 }}>
-          <div style={{ fontSize: 15, color: 'black' }}>King Size Room</div>
+        <div className='room-details text-display space-betwn bg-clr'>
+          <div>King Size Room</div>
           <div className='text-display'>
-            <div style={{ paddingRight: 10, fontSize: 13, color: 'gray' }}>1 ROOM</div>
-            <div style={{ fontSize: 13, color: 'gray' }}>2 GUESTS</div>
+            <div>1 ROOM</div>
+            <div>2 GUESTS</div>
           </div>
         </div>
 
-        <div style={{ padding: 10, textAlign: 'left', fontSize: 15, color: 'gray' }}>Select Payment Type</div>
+        <div className='payment-type-title'>Select Payment Type</div>
         <div className='text-display space-betwn payment-type'>
           <div>
-            <img src={require('../../Images/debit-card.png')}
-              style={{ width: 50, height: 50, alignSelf: 'center' }} />
+            <img src={require('../../Images/debit-card.png')}/>
             <div className='font-size clr-gray'>Debit Card</div>
           </div>
 
           <div>
-            <img src={require('../../Images/debit-card.png')}
-              style={{ width: 50, height: 50, alignSelf: 'center' }} />
+            <img src={require('../../Images/debit-card.png')}/>
             <div className='font-size clr-gray'>Credit Card</div>
           </div>
 
           <div>
-            <img src={require('../../Images/net-banking2.png')}
-              style={{ width: 50, height: 50, alignSelf: 'center' }} />
+            <img src={require('../../Images/net-banking2.png')}/>
             <div className='font-size clr-gray'>Net Banking</div>
           </div>
 
           <div>
-            <img src={require('../../Images/home.png')}
-              style={{ width: 50, height: 50, alignSelf: 'center' }} />
+            <img src={require('../../Images/home.png')}/>
             <div className='font-size clr-gray'>Pay @Home</div>
           </div>
         </div>
 
         <div className='text-display space-betwn payment-cards bottom-border' >
           <img
-            src={require('../../Images/visa2.png')}
-            style={{ width: 70, height: 50 }}
-          />
+            src={require('../../Images/visa2.png')}/>
           <img
-            src={require('../../Images/rupay.png')}
-            style={{ width: 70, height: 50 }}
-          />
+            src={require('../../Images/rupay.png')}/>
           <img
-            src={require('../../Images/maestro.png')}
-            style={{ width: 80, height: 50 }}
-          />
+            src={require('../../Images/maestro.png')}/>
           <img
-            src={require('../../Images/master-card.png')}
-            style={{ width: 80, height: 50 }}
-          />
+            src={require('../../Images/master-card.png')}/>
         </div>
 
-        <div style={{ backgroundColor: 'white', textAlign: 'left', paddingLeft: 30 }}>
-          <div>
+        <div className='card-details'>
+          <div className='card-number'>
             <TextField
               id="standard-name"
               label="Card Number"
@@ -106,7 +94,7 @@ export default class Payment extends Component {
               }}
             /></div>
 
-          <div>
+          <div className='card-name'>
             <TextField
               id="standard-name"
               label="Name on Card"
@@ -118,9 +106,9 @@ export default class Payment extends Component {
             /></div>
         </div>
 
-        <Link to='/hotel-list' style={{ textDecoration: 'none' }}>
+        <Link to='/hotel-list'>
           <div style={{ backgroundColor: 'white' }}>
-            <Button style={{ backgroundColor: '#45A7B7', position: 'absolute', left: 10, bottom: 0, width: '95%' }}>
+            <Button className="pay-btn">
               PAY ${this.props.location.state.range}
             </Button>
           </div>

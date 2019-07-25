@@ -1,17 +1,49 @@
-.payment-header{
-  display:flex;
+.payment-wrapper, .filter-wrapper, .hotel-details-wrapper {
+  background-color: #d8d8d8;
+}
+.payment-wrapper .hotel-name {
+  color: black;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.payment-header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  color:gray;
-  font-size:13px;
+  color: gray;
+  font-size: 13px;
   text-align: left;
-  padding:10px;
-  border-bottom:1px solid #D8D8D8;
+  padding: 10px;
+  border-bottom: 1px solid #D8D8D8;
 }
-.bg-clr{
+.check-in-info > div:first-child, .check-out-info > div:first-child {
+  padding: 5px;
+}
+.room-details {
+  padding: 10px;
+}
+.room-details > div:first-child {
+  font-size: 15px;
+  color: black;
+}
+.room-details .text-display > div:first-child {
+  padding-right: 10px;
+}
+.room-details .text-display > div {
+  font-size: 13px;
+  color: gray;
+}
+.payment-type-title {
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: gray;
+}
+.bg-clr {
   background-color: white;
 }
-.text-display{
+.text-display {
   display: flex;
   align-items: center;
 }
@@ -20,8 +52,8 @@
  padding: 15px;
  font-size: 13px;
 }
-.clr-gray{
-  color:gray;
+.clr-gray {
+  color: gray;
 }
 .space-even {
   justify-content: space-evenly;
@@ -35,21 +67,40 @@
   background-color: white;
   border-bottom: 1px solid #D8D8D8;
 }
-.font-size{
+.payment-type img {
+  width: 50px;
+  height: 50px;
+  align-self: center; 
+}
+.font-size {
   font-size: 13px;
 }
-.payment-cards{
+.payment-cards {
   background-color: white;
-  padding:15px;
+  padding: 15px;
 }
-.bottom-border{
+.payment-cards img {
+  width: 70px;
+  height: 50px;
+}
+.card-details {
+  background-color: white;
+  text-align: left;
+  padding-left: 30px; 
+}
+.bottom-border {
   border-bottom: 1px solid #D8D8D8;
 }
-.pay-btn{
-  background-color:#45A7B7;
-  width:95%;
-  position: absolute;
-  bottom:0;
-  left:10px;
+.App .pay-btn {
+  background-color: #45A7B7;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   color: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 0; 
+}
+.card-name {
+  margin-bottom: 80px;
 }

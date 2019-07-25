@@ -24,13 +24,8 @@ export default class HotelDetails extends Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: '#D8D8D8' }}>
-        <img src={require('../../Images/destination18.jpeg')}
-          style={{
-            width: '100%',
-            height: 200
-          }}
-        />
+      <div className='hotel-details-wrapper'>
+        <img src={require('../../Images/destination18.jpeg')}/>
         <Card className='hotel-details-header'>
           <div className='hotel-details-header-title'>
             <div className='header-title-hotel-name'>Hotel Blue Sky</div>
@@ -69,7 +64,7 @@ export default class HotelDetails extends Component {
         </Card>
 
         <Card className='facilities'>
-          <div style={{ textAlign: 'left', color: 'gray', fontSize: 15, padding: 10 }}>Facilities</div>
+          <div className='facilities-title'>Facilities</div>
           <div className='facility-options'>
 
             <div>
@@ -103,25 +98,19 @@ export default class HotelDetails extends Component {
           </div>
         </Card>
 
-        <Card style={{ margin: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+        <Card className='rating-wrapper'>
+          <div>
 
             <div className='ratings'>
               <div className='hotel-ratings'>
-                <div style={{ fontSize: 25, paddingRight: 5 }}>4.5</div>
-                <img src={require('../../Images/hotel-rating.png')}
-                  style={{
-                    width: 20,
-                    height: 20,
-                    marginLeft: 1
-                  }}
-                />
+                <div>4.5</div>
+                <img src={require('../../Images/hotel-rating.png')}/>
               </div>
               <div>56 Ratings &</div>
               <div>32 Reviews</div>
             </div>
 
-            <div>
+            <div className='progress-bar-wrapper'>
               <div className='progress-bar'>
                 <div className='hotel-rating-info'>Value for money</div>
                 <BorderLinearProgress
@@ -129,11 +118,11 @@ export default class HotelDetails extends Component {
                   color="red"
                   value={80}
                   style={{
-                    width: 100,
+                    width: 50,
                     height: 5
                   }}
                 />
-                <div style={{ paddingLeft: 10, fontSize: 13 }}>4.6/5</div>
+                <div className='hotel-rating-number'>4.6/5</div>
               </div>
 
               <div className='progress-bar'>
@@ -143,11 +132,11 @@ export default class HotelDetails extends Component {
                   color="red"
                   value={30}
                   style={{
-                    width: 100,
+                    width: 50,
                     height: 5
                   }}
                 />
-                <div style={{ paddingLeft: 10, fontSize: 13 }}>2.7/5</div>
+                <div className='hotel-rating-number'>2.7/5</div>
               </div>
 
               <div className='progress-bar'>
@@ -157,11 +146,11 @@ export default class HotelDetails extends Component {
                   color="red"
                   value={90}
                   style={{
-                    width: 100,
+                    width: 50,
                     height: 5
                   }}
                 />
-                <div style={{ paddingLeft: 10, fontSize: 13 }}>4.5/5</div>
+                <div className='hotel-rating-number'>4.5/5</div>
               </div>
 
               <div className='progress-bar'>
@@ -171,18 +160,18 @@ export default class HotelDetails extends Component {
                   color="red"
                   value={65}
                   style={{
-                    width: 100,
+                    width: 50,
                     height: 5
                   }}
                 />
-                <div style={{ paddingLeft: 10, fontSize: 13 }}>3.5/5</div>
+                <div className='hotel-rating-number'>3.5/5</div>
               </div>
 
             </div>
           </div>
         </Card>
 
-        <Card style={{ padding: 10, margin: 10, color: 'red', textAlign: 'left' }}>
+        <Card className='hotel-info'>
           Why book this hotel?
         </Card>
 
@@ -191,9 +180,8 @@ export default class HotelDetails extends Component {
           state: {
             range: this.props.location.state.range
           }
-        }}
-          style={{ textDecoration: 'none' }}>
-          <Button variant="contained" color="secondary" style={{ position: 'absolute', bottom: 0, width: '100%', left: 0 }}>
+        }}>
+          <Button variant="contained" color="secondary" className='book-btn'>
             Book
           </Button>
         </Link>

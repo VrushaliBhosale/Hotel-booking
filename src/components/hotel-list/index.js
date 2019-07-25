@@ -36,7 +36,7 @@ export default class HotelList extends Component {
             <div>
               <img src={require('../../Images/destination7.jpeg')} className='list-item-img' />
             </div>
-            <div style={{ paddingLeft: 10, textAlign: 'left', color: 'gray' }}>
+            <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
               <div className='hotel-subtitle'>5th street, dMontreal</div>
               <div className='hotel-list-item-review'>
@@ -44,9 +44,9 @@ export default class HotelList extends Component {
                 <div className='hotel'>Fabulous</div>
               </div>
               <div className='hotel-subtitle'>free Cancellation, Free Wi-Fi</div>
-              <div className='text-strike' style={{ textDecorationLine: 'line-through' }}> $199</div>
-              <div style={{ display: 'flex' }}>
-                <div style={{ color: 'red', fontSize: 20 }}>$149</div>
+              <div className='text-strike'> $199</div>
+              <div className='hotel-price-wrapper'>
+                <div className='hotel-price'>$149</div>
                 <div className='hotel-subtitle'> 25% OFF</div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default class HotelList extends Component {
             <div>
               <img src={require('../../Images/destination6.jpeg')} className='list-item-img' />
             </div>
-            <div style={{ paddingLeft: 10, textAlign: 'left', color: 'gray' }}>
+            <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
               <div className='hotel-subtitle'>5th street, dMontreal</div>
               <div className='hotel-list-item-review'>
@@ -64,9 +64,9 @@ export default class HotelList extends Component {
                 <div className='hotel'>Fabulous</div>
               </div>
               <div className='hotel-subtitle'>free Cancellation, Free Wi-Fi</div>
-              <div className='text-strike' style={{ textDecorationLine: 'line-through' }}> $199</div>
-              <div style={{ display: 'flex' }}>
-                <div style={{ color: 'red', fontSize: 20 }}>$149</div>
+              <div className='text-strike'> $199</div>
+              <div className='hotel-price-wrapper'>
+                <div className='hotel-price'>$149</div>
                 <div className='hotel-subtitle'> 25% OFF</div>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default class HotelList extends Component {
             <div>
               <img src={require('../../Images/destination9.jpeg')} className='list-item-img' />
             </div>
-            <div style={{ paddingLeft: 10, textAlign: 'left', color: 'gray' }}>
+            <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
               <div className='hotel-subtitle'>5th street, dMontreal</div>
               <div className='hotel-list-item-review'>
@@ -84,9 +84,9 @@ export default class HotelList extends Component {
                 <div className='hotel'>Fabulous</div>
               </div>
               <div className='hotel-subtitle'>free Cancellation, Free Wi-Fi</div>
-              <div className='text-strike' style={{ textDecorationLine: 'line-through' }}> $199</div>
-              <div style={{ display: 'flex' }}>
-                <div style={{ color: 'red', fontSize: 20 }}>$149</div>
+              <div className='text-strike'> $199</div>
+              <div className='hotel-price-wrapper'>
+                <div className='hotel-price'>$149</div>
                 <div className='hotel-subtitle'> 25% OFF</div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default class HotelList extends Component {
             <div>
               <img src={require('../../Images/destination8.jpeg')} className='list-item-img' />
             </div>
-            <div style={{ paddingLeft: 10, textAlign: 'left', color: 'gray' }}>
+            <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
               <div className='hotel-subtitle'>5th street, dMontreal</div>
               <div className='hotel-list-item-review'>
@@ -104,9 +104,9 @@ export default class HotelList extends Component {
                 <div className='hotel'>Fabulous</div>
               </div>
               <div className='hotel-subtitle'>free Cancellation, Free Wi-Fi</div>
-              <div className='text-strike' style={{ textDecorationLine: 'line-through' }}> $199</div>
-              <div style={{ display: 'flex' }}>
-                <div style={{ color: 'red', fontSize: 20 }}>$149</div>
+              <div className='text-strike'> $199</div>
+              <div className='hotel-price-wrapper'>
+                <div className='hotel-price'>$149</div>
                 <div className='hotel-subtitle'> 25% OFF</div>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default class HotelList extends Component {
             <div>
               <img src={require('../../Images/destination15.jpeg')} className='list-item-img' />
             </div>
-            <div style={{ paddingLeft: 10, textAlign: 'left', color: 'gray' }}>
+            <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
               <div className='hotel-subtitle'>5th street, dMontreal</div>
               <div className='hotel-list-item-review'>
@@ -124,9 +124,9 @@ export default class HotelList extends Component {
                 <div className='hotel'>Fabulous</div>
               </div>
               <div className='hotel-subtitle'>free Cancellation, Free Wi-Fi</div>
-              <div className='text-strike' style={{ textDecorationLine: 'line-through' }}> $199</div>
-              <div style={{ display: 'flex' }}>
-                <div style={{ color: 'red', fontSize: 20 }}>$149</div>
+              <div className='text-strike'> $199</div>
+              <div className='hotel-price-wrapper'>
+                <div className='hotel-price'>$149</div>
                 <div className='hotel-subtitle'> 25% OFF</div>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default class HotelList extends Component {
               </Button>
             </div>
 
-            <Link to='/filter' style={{ textDecoration: 'none' }}>
+            <Link to='/filter'>
               <Button className='sort-and-filter sort'>
                 <img src={require('../../Images/filter.png')}
                   className='sort-filter-icon'
@@ -152,10 +152,7 @@ export default class HotelList extends Component {
             </Link>
 
           </div>
-
         </div>
-
-
       </div>
     )
   }

@@ -52,9 +52,7 @@ export default function Filter() {
   }
 
   return (
-    <div style={{
-      backgroundColor: '#D8D8D8'
-    }}>
+    <div className='filter-wrapper'>
       <Card className='filter-header space-betwn'>
         <div className='filter-header space-around'>
           <Link to='hotel-list'>
@@ -62,14 +60,14 @@ export default function Filter() {
               arrow_back
             </i>
           </Link>
-          <div>Filter</div>
+          <div className='filter'>FILTER</div>
         </div>
-        <div onClick={reset}>RESET</div>
+        <div className='filter-header space-around'>
+          <div className='reset' onClick={reset}>RESET</div>
+        </div>
       </Card>
 
-      <Card style={{
-        padding: 10
-      }} className='margin'>
+      <Card className='margin'>
         <div className='card-title'>
           PRICE RANGE
           </div>
@@ -93,7 +91,7 @@ export default function Filter() {
         />
       </Card>
 
-      <Card style={{ padding: 10 }} className='margin'>
+      <Card className='margin'>
         <div className='card-title'>
           HOTEL STAR
           </div>
@@ -110,7 +108,7 @@ export default function Filter() {
                   <img src={require('../../Images/star.png')}
                     className='star'
                   />
-                  <div style={{ alignSelf: 'center', fontSize: 15 }}>{item}</div>
+                  <div>{item}</div>
                 </Card>
               )
             })
@@ -118,29 +116,27 @@ export default function Filter() {
         </div>
       </Card>
 
-      <div className='margin'>
-        <Card className='radio-options'>
-          <div className='radio-btn-titles'>Free Cancellation</div>
-          <GreenRadio
-            checked={selectedValue === 'a'}
-            onChange={handleChange}
-            value="a"
-            name="radio-button-demo"
-            inputProps={{ 'aria-label': 'A' }}
-          />
-        </Card>
+      <Card className='radio-options margin'>
+        <div className='radio-btn-titles'>Free Cancellation</div>
+        <GreenRadio
+          checked={selectedValue === 'a'}
+          onChange={handleChange}
+          value="a"
+          name="radio-button-demo"
+          inputProps={{ 'aria-label': 'A' }}
+        />
+      </Card>
 
-        <Card className='radio-options'>
-          <div className='radio-btn-titles'>Reserve now pay later</div>
-          <GreenRadio
-            checked={selectedValue === 'b'}
-            onChange={handleChange}
-            value="b"
-            name="radio-button-demo"
-            inputProps={{ 'aria-label': 'B' }}
-          />
-        </Card>
-      </div>
+      <Card className='radio-options margin'>
+        <div className='radio-btn-titles'>Reserve now pay later</div>
+        <GreenRadio
+          checked={selectedValue === 'b'}
+          onChange={handleChange}
+          value="b"
+          name="radio-button-demo"
+          inputProps={{ 'aria-label': 'B' }}
+        />
+      </Card>
 
       <Card className='radio-options margin'>
         <div className='radio-btn-titles'>Sunrise check-in</div>
@@ -154,14 +150,9 @@ export default function Filter() {
       </Card>
 
       <Card className='radio-options facility-margin'>
-        <div style={{
-          textAlign: 'left'
-        }}>
+        <div>
           <div className='radio-btn-titles'>Other facilities</div>
-          <div style={{
-            color: 'gray',
-            fontSize: 13
-          }}>Parking, Pool, Bar + 1 more</div>
+          <div>Parking, Pool, Bar + 1 more</div>
         </div>
         <i class="material-icons">
           chevron_right
@@ -173,15 +164,12 @@ export default function Filter() {
         state: {
           range: rangeValue
         }
-      }} style={{ textDecoration: 'none' }}>
+      }}>
         <Button variant="contained" color="primary" className='apply-btn'>
           Apply
       </Button>
       </Link>
 
-    </div >
+    </div>
   )
 }
-
-
-

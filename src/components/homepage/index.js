@@ -53,26 +53,26 @@ export default class Homepage extends Component {
           style={{ width: '100%' }}
         />
 
-        <div>
-          <input type='text' placeholder='Where are you travelling?' className='search-text' style={{ width: 200 }} />
-          <Link to='/hotel-list' style={{ textDecoration: 'none' }}>
-            <Button variant="contained" color="secondary">Search</Button>
+        <div className='search-wrapper'>
+          <input type='text' placeholder='Where are you travelling?' className='search-text'/>
+          <Link to='/hotel-list'>
+            <Button className='search-btn' variant="contained" color="secondary">Search</Button>
           </Link>
         </div>
 
-        <div>
+        <div className='popular-destination-wrapper'>
           <div className='img-header'>POPULAR DESTINATION</div>
-          <div style={{ height: 250 }}>
-            <img src={require('../../Images/destination8.jpeg')} style={{ width: '93%' }} />
+          <div className='holiday-wrapper'>
+            <img src={require('../../Images/destination8.jpeg')}/>
             <div className='holiday-img-text'>HOLIDAY TRAVEL 2018</div>
           </div>
-          <div className='header-flex-display space-arnd' style={{ marginTop: 25, justifyContent: 'space-around' }}>
+          <div className='header-flex-display space-arnd'>
             <div>
-              <img src={require('../../Images/destination6.jpeg')} style={{ width: 170, height: '170px', marginRight: 10 }} />
+              <img src={require('../../Images/destination6.jpeg')}/>
               <div className='world-img-text'>WORLD HERITAGE</div>
             </div>
             <div>
-              <img src={require('../../Images/destination7.jpeg')} style={{ width: 173, height: '170px' }} />
+              <img src={require('../../Images/destination7.jpeg')}/>
               <div className='bestplace-img-text'>BEST PLACE TO LIVE</div>
             </div>
           </div>

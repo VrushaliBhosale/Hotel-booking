@@ -1,41 +1,51 @@
-
-.list-header{
+.list-header {
   position: fixed;
   width: 100%;
-  top:0;
+  top: 0;
   background-color: white;
   z-index: 100;
 }
-.list{
+.list {
   position: relative;
   top: 100px;
   padding-top: 5px;
   background-color: #D8D8D8;
   padding-bottom: 50px;
 }
-.list-item{
-  display:flex;
-  margin:10px;
-  background-color:white;
-  height:145px;
+.list-item {
+  display: flex;
+  margin: 10px;
+  background-color: white;
 }
-.list-item-img{
+.list-item-info {
+  padding-left: 10px;
+  text-align: left;
+  color: gray;
+}
+.list-item-img {
   width: 155px;
   height: 145px;
 }
-.hotel-title{
+.hotel-title {
   font-size: 16px;
   padding-top: 5px;
 }
-.hotel-subtitle{
-  font-size:13px;
+.hotel-subtitle {
+  font-size: 13px;
   padding: 5px;
 }
-.text-strike{
-  text-decoration-line: 'line-through';
-  font-size:13px;
+.hotel-price-wrapper {
+  display: flex;
 }
-.hotel-list-item-review{
+.hotel-price {
+  color: red;
+  font-size: 20px; 
+}
+.text-strike {
+  text-decoration-line: line-through;
+  font-size: 13px;
+}
+.hotel-list-item-review {
   display: flex;
   flex-direction: row;
   border-radius: 5px;
@@ -48,7 +58,7 @@
   border-bottom-left-radius: 11px;
   font-size: 15px;
 }
-.hotel{
+.hotel {
   background-color: #90EE90;
   color: green;
   padding: 3px;
@@ -56,54 +66,55 @@
   border-bottom-right-radius: 11px;
   font-size: 15px;
 }
-.display{
+.display {
   display: flex;
   align-items: center;
   padding:10px;
   justify-content: space-between;
   border-bottom: 1px solid gray;
 }
-.journey-dates{
+.journey-dates {
   display: flex;
   justify-content: space-evenly;
-  padding:10px;
+  padding: 10px;
 }
-.clr-red{
-  color:red;
+.clr-red {
+  color: red;
   font-size: 13px;
 }
-.journey-time{
-  color:gray;
-  font-size:13px;
+.journey-time {
+  color: gray;
+  font-size: 13px;
 }
-.journey-info{
+.journey-info {
   border-right: 1px solid gray;
   padding-right: 29px;
 }
-.hotel-list-footer{
+.hotel-list-footer {
   position: fixed;
-  bottom:0;
+  bottom: 0;
   background-color: white;
 }
-.sort-and-filter{
+.sort-and-filter {
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: space-around;
 }
-.sort{
+.sort {
   width: 190px;
   padding: 30px;
   height: 50px;
   background-color: white;
 }
-.sort-filter-icon{
+.sort-filter-icon {
   width: 25px;
   height: 25px;
   border-radius: 70px;
 }
-.flex-content-space-around{
+.flex-content-space-around {
   justify-content: space-around;
 }
-.flex-content-space-btwn{
+.flex-content-space-btwn {
   justify-content: space-between;
 }

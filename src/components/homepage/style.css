@@ -1,72 +1,111 @@
-.clr-black{
-  color:black;
+.clr-black {
+  color: black;
 }
-.hotel-list-header{
+.hotel-list-header {
   color: white;
   font-size: 20px;
 }
-.header-flex-display{
+.header-flex-display {
   display: flex;
   align-items: baseline;
 }
-.space-arnd{
+.popular-destination-wrapper .header-flex-display {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: space-around;
+}
+.popular-destination-wrapper .header-flex-display > div img{
+  min-height: 170px;
+}
+.popular-destination-wrapper .header-flex-display > div img:first-child {
+  margin-right: 10px;
+}
+.space-arnd {
   justify-content: space-around;
   margin: 0px 10px 0px 10px;
   margin-top: 25px;
 }
-.flex-items{
+.space-arnd > div:first-child {
+  margin-right: 10px;
+}
+.space-arnd > div, .holiday-wrapper {
+  position: relative;
+}
+.holiday-wrapper {
+  margin: 10px;
+}
+.holiday-wrapper img, .header-flex-display img {
+  width: 100%;
+}
+.flex-items {
   justify-content: space-between;
-  padding: 19px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   align-items: center;
 }
-.search-text{
+.search-text {
+  width: 200px;
+}
+.search-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.search-text {
   height: 30px;
   border-radius: 30px;
-  margin: 15px;
-  padding: 5px;
+  margin: 10px 0;
   outline: none;
- }
- .img-header{
+  border: 1px solid gray;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.App .search-btn {
+  margin: 12px 0;
+}
+.img-header {
   text-align: left;
-  padding: 10px;
+  padding: 15px;
   color: gray;
   font-size: 15px;
 }
- .destination-img1{
+.destination-img1 {
   width: 168px;
   height: 170px;
   margin-right: 25px;
- }
- .destination-img2{
+}
+.destination-img2 {
   width: 168px;
   height: 170px;
- }
- .holiday-img-text{
-  position: relative;
-  bottom: 42px;
+}
+.holiday-img-text {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
   color: white;
   background-color: black;
   opacity: 0.7;
-  padding: 11px;
-  margin-left: 13px;
-  margin-right: 14px;
- }
- .world-img-text{
-  position: relative;
-  bottom: 30px;
-  color: white;
-  background-color: black;
-  opacity: 0.7;
-  padding: 5px;
-  margin-right: 10px;
- }
- .bestplace-img-text{
-  position: relative;
-  bottom: 30px;
+  padding: 10px;
+}
+.world-img-text {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
   color: white;
   background-color: black;
   opacity: 0.7;
   padding: 5px;
- }
-
-
+}
+.bestplace-img-text {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  padding: 5px;
+}
+.image-slider > div {
+  width: 100% !important;
+}
