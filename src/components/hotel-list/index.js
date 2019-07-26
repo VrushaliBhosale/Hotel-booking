@@ -34,7 +34,9 @@ export default class HotelList extends Component {
         <div className='list'>
           <Card className='list-item'>
             <div>
-              <img src={require('../../Images/destination7.jpeg')} className='list-item-img' />
+              <img src={require('../../Images/destination7.jpeg')} 
+              className='list-item-img'
+              alt='destination7'/>
             </div>
             <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
@@ -54,7 +56,7 @@ export default class HotelList extends Component {
 
           <Card className='list-item'>
             <div>
-              <img src={require('../../Images/destination6.jpeg')} className='list-item-img' />
+              <img src={require('../../Images/destination6.jpeg')} className='list-item-img' alt='destination6'/>
             </div>
             <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
@@ -74,7 +76,7 @@ export default class HotelList extends Component {
 
           <Card className='list-item'>
             <div>
-              <img src={require('../../Images/destination9.jpeg')} className='list-item-img' />
+              <img src={require('../../Images/destination9.jpeg')} className='list-item-img' alt='destination9'/>
             </div>
             <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
@@ -94,7 +96,7 @@ export default class HotelList extends Component {
 
           <Card className='list-item'>
             <div>
-              <img src={require('../../Images/destination8.jpeg')} className='list-item-img' />
+              <img src={require('../../Images/destination8.jpeg')} className='list-item-img' alt='destination'/>
             </div>
             <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
@@ -114,7 +116,7 @@ export default class HotelList extends Component {
 
           <Card className='list-item'>
             <div>
-              <img src={require('../../Images/destination15.jpeg')} className='list-item-img' />
+              <img src={require('../../Images/destination15.jpeg')} className='list-item-img' alt='destination15'/>
             </div>
             <div className='list-item-info'>
               <div className='hotel-title'>Hotel Blue Sky</div>
@@ -137,6 +139,7 @@ export default class HotelList extends Component {
               <Button className='sort-and-filter sort'>
                 <img src={require('../../Images/sort_icon.png')}
                   className='sort-filter-icon'
+                  alt='sort'
                 />
                 <div>Sort</div>
               </Button>
@@ -146,6 +149,7 @@ export default class HotelList extends Component {
               <Button className='sort-and-filter sort'>
                 <img src={require('../../Images/filter.png')}
                   className='sort-filter-icon'
+                  alt='filter'
                 />
                 <div>Filter</div>
               </Button>

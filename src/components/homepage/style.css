@@ -47,7 +47,11 @@
 }
 .search-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 10px;
+}
+.search-wrapper a {
+  margin: 0 5px;
 }
 .search-text {
   height: 30px;

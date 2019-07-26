@@ -63,16 +63,16 @@ export default class Homepage extends Component {
         <div className='popular-destination-wrapper'>
           <div className='img-header'>POPULAR DESTINATION</div>
           <div className='holiday-wrapper'>
-            <img src={require('../../Images/destination8.jpeg')}/>
+            <img src={require('../../Images/destination8.jpeg')} alt='destination8'/>
             <div className='holiday-img-text'>HOLIDAY TRAVEL 2018</div>
           </div>
           <div className='header-flex-display space-arnd'>
             <div>
-              <img src={require('../../Images/destination6.jpeg')}/>
+              <img src={require('../../Images/destination6.jpeg')} alt='destination6'/>
               <div className='world-img-text'>WORLD HERITAGE</div>
             </div>
             <div>
-              <img src={require('../../Images/destination7.jpeg')}/>
+              <img src={require('../../Images/destination7.jpeg')} alt='destination7'/>
               <div className='bestplace-img-text'>BEST PLACE TO LIVE</div>
             </div>
           </div>

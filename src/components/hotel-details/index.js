@@ -25,7 +25,7 @@ export default class HotelDetails extends Component {
   render() {
     return (
       <div className='hotel-details-wrapper'>
-        <img src={require('../../Images/destination18.jpeg')}/>
+        <img src={require('../../Images/destination18.jpeg')} alt='destination18'/>
         <Card className='hotel-details-header'>
           <div className='hotel-details-header-title'>
             <div className='header-title-hotel-name'>Hotel Blue Sky</div>
@@ -70,6 +70,7 @@ export default class HotelDetails extends Component {
             <div>
               <img src={require('../../Images/wifi-icon.png')}
                 className='sub_header_facility_icon'
+                alt='wifi'
               />
               <div>Wifi</div>
             </div>
@@ -77,6 +78,7 @@ export default class HotelDetails extends Component {
             <div>
               <img src={require('../../Images/open-bar-icon.png')}
                 className='sub_header_facility_icon'
+                alt='open-bar'
               />
               <div>Open Bar</div>
             </div>
@@ -84,6 +86,7 @@ export default class HotelDetails extends Component {
             <div>
               <img src={require('../../Images/restaurant.png')}
                 className='sub_header_facility_icon'
+                alt='restaurant'
               />
               <div>Restaurant</div>
             </div>
@@ -104,7 +107,7 @@ export default class HotelDetails extends Component {
             <div className='ratings'>
               <div className='hotel-ratings'>
                 <div>4.5</div>
-                <img src={require('../../Images/hotel-rating.png')}/>
+                <img src={require('../../Images/hotel-rating.png')} alt='hotel-rating'/>
               </div>
               <div>56 Ratings &</div>
               <div>32 Reviews</div>

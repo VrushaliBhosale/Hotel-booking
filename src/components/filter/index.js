@@ -107,6 +107,7 @@ export default function Filter() {
                 >
                   <img src={require('../../Images/star.png')}
                     className='star'
+                    alt='starimage'
                   />
                   <div>{item}</div>
                 </Card>

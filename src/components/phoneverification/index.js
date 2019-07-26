@@ -29,7 +29,7 @@ export default class PhoneVerification extends Component {
             </Button>
           </Link>
           <div className='header-subtitle clr-white'>
-            By clicking continue, you agree to our <div className='clr-red'>Terms and Conditions.</div>
+            By clicking continue, you agree to our <div>Terms and Conditions.</div>
           </div>
         </div>
       </div>
