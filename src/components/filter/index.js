@@ -150,7 +150,7 @@ export default function Filter() {
         />
       </Card>
 
-      <Card className='radio-options facility-margin'>
+      <Card className='radio-options margin'>
         <div>
           <div className='radio-btn-titles'>Other facilities</div>
           <div>Parking, Pool, Bar + 1 more</div>
@@ -165,7 +165,7 @@ export default function Filter() {
         state: {
           range: rangeValue
         }
-      }}>
+      }} className='apply-btn-wrapper'>
         <Button variant="contained" color="primary" className='apply-btn'>
           Apply
       </Button>

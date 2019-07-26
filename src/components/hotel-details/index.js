@@ -35,7 +35,7 @@ export default class HotelDetails extends Component {
 
           <div className='header-journey-details'>
             <div className='hotel-journey-dates'>
-              <div className='dates'>CHECK IN</div>
+              <div className='dates'>Check In</div>
               <div>Thu, 14 Jun</div>
             </div>
 
@@ -43,7 +43,7 @@ export default class HotelDetails extends Component {
               <div style={{
                 width: 300
               }}>
-                <div className='dates'>CHECK OUT</div>
+                <div className='dates'>Check Out</div>
                 <div>Sun, 17 Jun</div>
               </div>
               <i class="material-icons">
@@ -183,7 +183,7 @@ export default class HotelDetails extends Component {
           state: {
             range: this.props.location.state.range
           }
-        }}>
+        }} className='book-btn-wrapper'>
           <Button variant="contained" color="secondary" className='book-btn'>
             Book
           </Button>

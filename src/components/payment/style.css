@@ -1,4 +1,4 @@
-.payment-wrapper, .filter-wrapper, .hotel-details-wrapper {
+.filter-wrapper, .hotel-details-wrapper {
   background-color: #d8d8d8;
 }
 .payment-wrapper .hotel-name {
@@ -39,6 +39,7 @@
   text-align: left;
   font-size: 15px;
   color: gray;
+  background-color: #d8d8d8;
 }
 .bg-clr {
   background-color: white;
@@ -91,15 +92,17 @@
 .bottom-border {
   border-bottom: 1px solid #D8D8D8;
 }
-.App .pay-btn {
-  background-color: #45A7B7;
+.App .pay-btn-wrapper {
+  width: 100%;
+  display: block;
   position: fixed;
   bottom: 0;
   left: 0;
+  background-color: #45A7B7;
+}
+.App .pay-btn {
   color: white;
-  width: 100%;
   padding: 15px;
-  border-radius: 0; 
 }
 .card-name {
   margin-bottom: 80px;

@@ -106,12 +106,10 @@ export default class Payment extends Component {
             /></div>
         </div>
 
-        <Link to='/hotel-list'>
-          <div style={{ backgroundColor: 'white' }}>
-            <Button className="pay-btn">
-              PAY ${this.props.location.state.range}
-            </Button>
-          </div>
+        <Link to='/hotel-list' className="pay-btn-wrapper">
+          <Button className="pay-btn">
+            PAY ${this.props.location.state.range}
+          </Button>
         </Link>
 
       </div>
